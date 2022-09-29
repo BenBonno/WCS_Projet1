@@ -1,11 +1,19 @@
-main,
-body,
-html {
-  height: 100%;
+* {
   margin: 0;
   font-family: Helvetica, sans-serif;
   box-sizing: border-box;
 }
+/* Header ---------------*/
+header {
+  background-color: #6daca5;
+}
+/* Body ---------------*/
+body {
+  background-color: #000000;
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+}
+
 .image {
   height: 100vh;
   background-position: center;
@@ -13,7 +21,7 @@ html {
   background-size: cover;
 }
 section.one {
-  background-color:#ffffff;
+  background-color: #000000;
 }
 section.two {
   background-image: url("/assets/img/bgLaputa.jpg");
@@ -28,21 +36,11 @@ section.five {
   background-image: url("/assets/img/bgTotoro.jpeg");
 }
 section.six {
-    background-color: #6daca5;
-    background-image: url("/assets/img/bgChihiro.png");
+  background-color: #6daca5;
+  background-image: url("/assets/img/bgChihiro.png");
 }
-section.content {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff0c2;
-  font-weight: bold;
-  font-size: 60px;
-  border: 8px solid #000000;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 100vw;
-  padding: 50px;
-  text-align: center;
+
+/* Footer ---------------*/
+footer {
+  background-color: #6daca5;
 }
