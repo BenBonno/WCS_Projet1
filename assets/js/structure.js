@@ -1,5 +1,5 @@
 const header = document.querySelector(".header");
-
+const menuwrapper = document.querySelector(".body");
 const main = document.querySelector(".main");
 const sectionArray = [
   {
@@ -61,10 +61,14 @@ for (let i = 0; i < sectionArray.length; i++) {
   navA.classList.add("nav-a");
   navUl.appendChild(navA);
 }
-const divAcceuil = document.createElement("div");
-divAcceuil.classList.add("acceuil");
-header.appendChild(divAcceuil);
+const divAccueil = document.createElement("div");
+divAccueil.classList.add("accueil");
+header.appendChild(divAccueil);
 ///// Fin HEADER /////
+
+const divMenuWrapper = document.createElement("div");
+divMenuWrapper.classList.add("menu");
+menuwrapper.appendChild(divMenuWrapper);
 
 function createSection(title, imageUrl, htmlSpan, htmlP, htmlcontent) {
     const section = document.createElement("section");
