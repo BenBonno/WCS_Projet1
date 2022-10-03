@@ -174,3 +174,35 @@ a:focus {
     transform: translateY(0);
   }
 }
+
+.rewards {  
+  
+  font-size: 1rem;
+}
+table {
+  min-width:90%;
+}
+table,
+th,
+td {
+  color: black;
+  border: 1px solid;
+  margin-left: 40px;  
+  text-align: center;  
+}
+
+th {
+  background-color: rgba(199, 222, 202, 0.2);
+}
+tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(199, 222, 202, 0.2);
+}
+
+.column1{
+  width:5%;
+}
+
