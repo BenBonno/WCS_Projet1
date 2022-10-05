@@ -66,9 +66,18 @@ divAccueil.classList.add("accueil");
 header.appendChild(divAccueil);
 ///// Fin HEADER /////
 
+const MenuBgWrapper = document.createElement("div");
+MenuBgWrapper.classList.add("wrapper-menu");
+menuwrapper.appendChild(MenuBgWrapper);
+
+const totoImg = document.createElement("img");
+totoImg.src = `/assets/img/totorosmall.gif`;
+MenuBgWrapper.appendChild(totoImg);
+
 const divMenuWrapper = document.createElement("div");
 divMenuWrapper.classList.add("menu");
-menuwrapper.appendChild(divMenuWrapper);
+MenuBgWrapper.appendChild(divMenuWrapper);
+
 
 function createSection(title, imageUrl, htmlSpan, htmlP, htmlcontent) {
     const section = document.createElement("section");

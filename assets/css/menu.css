@@ -7,18 +7,23 @@
     width: 100vw;
 }
 
-.menu {
-    left : 32px; /* Gislain dans la place */
-    bottom:90px; /* Gislain dans la place */
+.wrapper-menu {
+  position: fixed;
+  left : -26px; /* Gislain dans la place */
+  bottom: -20px; /* Gislain dans la place */
+}
 
-    position: fixed;
+.menu {
+    left : 82px; /* Gislain dans la place */
+    bottom: 107px; /* Gislain dans la place */
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 5vw;
     height: 5vh;
-    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
   }
+
   .menu .menu-icon {
     transform: scale(1.5);
   }
