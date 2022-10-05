@@ -28,7 +28,7 @@ const sectionArray = [
     image: "/assets/img/bgMononoke.jpg",
     htmlSpan: "",
     htmlP: "",
-    htmlcontent: "<iframe>ça marche</iframe>"
+    htmlcontent: "<div class='rewards'></div>"
   }
 ];
 
