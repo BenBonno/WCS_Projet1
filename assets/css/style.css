@@ -67,17 +67,10 @@ a:focus {
   margin: 0 0.2em 0 0.2em;
 }
 .header-nav{
-
+  display: none;
 }
-.nav-ul{
-  list-style: none;
-  margin-right: 0.8em;
-}
-.nav-li{
-  padding:10px 1vh;
-  margin: 0 0.2em 0 0.2em;
-  font-size: .8em;
-  display:inline;
+.menu {
+  display: block;
 }
 
 .acceuil{
