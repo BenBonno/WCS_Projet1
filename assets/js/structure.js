@@ -1,6 +1,7 @@
 const header = document.querySelector(".header");
 const menuwrapper = document.querySelector(".body");
 const main = document.querySelector(".main");
+
 const sectionArray = [
   {
     title: "News",
@@ -33,12 +34,35 @@ const sectionArray = [
 ];
 
 /// Creation Header ///
+
+const videoMobile = document.createElement("video");
+videoMobile.classList.add("video-mobilefirst");
+videoMobile.autoplay = true;
+videoMobile.loop = true;
+videoMobile.muted = true;
+header.appendChild(videoMobile);
+const mobileSource = document.createElement('source');
+mobileSource.type = "video/mp4";
+mobileSource.src = "/assets/video/joevideo3.mp4";
+videoMobile.appendChild(mobileSource);
+
+const videoDesktop = document.createElement("video");
+videoDesktop.classList.add("video-desktop");
+videoDesktop.autoplay = true;
+videoDesktop.loop = true;
+videoDesktop.muted = true;
+header.appendChild(videoDesktop);
+const desktopSource = document.createElement('source');
+desktopSource.type = "video/mp4";
+desktopSource.src = "/assets/video/joevideo2.mp4";
+videoDesktop.appendChild(desktopSource);
+
 const divParent = document.createElement("div");
 divParent.classList.add("header-wrapper");
 header.appendChild(divParent);
 
 const headerTitle = document.createElement("h1");
-headerTitle.innerHTML = `Joe </br> Hisaishi`;
+headerTitle.innerHTML = `<img src ="/assets/img/logoJH.png" alt="logo joe Hisaishi"/>`;
 headerTitle.classList.add("header-title");
 divParent.appendChild(headerTitle);
 
@@ -59,7 +83,7 @@ for (let i = 0; i < sectionArray.length; i++) {
   navA.innerHTML = `${sectionArray[i].title}`;
   navA.href = `#${sectionArray[i].title}`;
   navA.classList.add("nav-a");
-  navUl.appendChild(navA);
+  navLi.appendChild(navA);
 }
 const divAccueil = document.createElement("div");
 divAccueil.classList.add("accueil");
