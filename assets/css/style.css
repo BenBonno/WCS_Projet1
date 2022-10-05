@@ -67,8 +67,7 @@ a:focus {
   padding: 10px 1vh;
   margin: 0 0.2em 0 0.2em;
 }
-.header-nav {
-}
+
 .nav-ul {
   list-style: none;
   margin-right: 0.8em;
@@ -204,7 +203,7 @@ tbody tr:nth-child(even) {
 .column1 {
   width: 5%;
 }
-/* Carrousel */
+/* Carrousel --------------------------------------------------------------------------------*/
 
 #carrousel {
   background-color: whitesmoke;
@@ -215,7 +214,7 @@ tbody tr:nth-child(even) {
   overflow: hidden;
 }
 #containerCarrousel {
-  width: 100px;
+  width: 800px;
   height: 400px;
 }
 .photo {
@@ -247,3 +246,4 @@ tbody tr:nth-child(even) {
   transform: scale(1.2);
   opacity: 0.8;
 }
+/* End carrousel ------------------------------------------------------------*/

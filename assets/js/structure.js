@@ -35,7 +35,7 @@ const sectionArray = [
     image: "/assets/img/bgPorco.jpg",
     htmlSpan: "",
     htmlP: "",
-    htmlcontent: "<div id='containerCarrousel'></div>"
+    htmlcontent: '<div id="carrousel"> <div id="containerCarrousel"></div> <img src="assets/img/leftChevron.png" alt="leftButtonCarrousel" class="button" id="leftChevron"/> <img src="assets/img/rightChevron.png" alt="rightButtonCarrousel" class="button" id="rightChevron"/></div>',
   }
 ];
 
