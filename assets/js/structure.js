@@ -29,7 +29,14 @@ const sectionArray = [
     image: "/assets/img/bgMononoke.jpg",
     htmlSpan: "",
     htmlP: "",
-    htmlcontent: "<iframe>ça marche</iframe>"
+    htmlcontent: "<div class='rewards'></div>"
+  },
+  {
+    title: "Carrousel",
+    image: "/assets/img/bgPorco.jpg",
+    htmlSpan: "",
+    htmlP: "",
+    htmlcontent: "<div id='carrousel'></div>"
   }
 ];
 
@@ -95,46 +102,46 @@ divMenuWrapper.classList.add("menu");
 menuwrapper.appendChild(divMenuWrapper);
 
 function createSection(title, imageUrl, htmlSpan, htmlP, htmlcontent) {
-    const section = document.createElement("section");
-    section.id = `${title}`;
-    section.classList.add("section");
-    main.appendChild(section);
-  
-    const sectionFigure = document.createElement("figure");
-    sectionFigure.classList.add("image-container");
-    section.appendChild(sectionFigure);
-  
-    const figureImg = document.createElement("img");
-    figureImg.src = `${imageUrl}`;
-    figureImg.alt = `Description`;
-    sectionFigure.appendChild(figureImg);
-  
-    const articleBody = document.createElement("article");
-    articleBody.classList.add("content");
-    section.appendChild(articleBody);
-  
-    const articleTitle = document.createElement("h2");
-    articleTitle.innerHTML = `${title}`;
-    articleTitle.classList.add("section-title");
-    articleBody.appendChild(articleTitle);
+  const section = document.createElement("section");
+  section.id = `${title}`;
+  section.classList.add("section");
+  main.appendChild(section);
 
-    if (htmlSpan !=="" || htmlP !== "") {
-      const articleSpan = document.createElement("span");
-      articleSpan.innerHTML = `${htmlSpan}`;
-      articleSpan.classList.add("byline");
-      articleBody.appendChild(articleSpan);
+  const sectionFigure = document.createElement("figure");
+  sectionFigure.classList.add("image-container");
+  section.appendChild(sectionFigure);
 
-      const articleP = document.createElement("p");
-      articleP.innerHTML = `${htmlP}`;
-      articleBody.appendChild(articleP);
-    } else {
-      const articlediv = document.createElement("div");
-      articlediv.innerHTML = `${htmlcontent}`;
-      articlediv.classList.add("freestyle");
-      articleBody.appendChild(articlediv);
-    }
+  const figureImg = document.createElement("img");
+  figureImg.src = `${imageUrl}`;
+  figureImg.alt = `Description`;
+  sectionFigure.appendChild(figureImg);
+
+  const articleBody = document.createElement("article");
+  articleBody.classList.add("content");
+  section.appendChild(articleBody);
+
+  const articleTitle = document.createElement("h2");
+  articleTitle.innerHTML = `${title}`;
+  articleTitle.classList.add("section-title");
+  articleBody.appendChild(articleTitle);
+
+  if (htmlSpan !== "" || htmlP !== "") {
+    const articleSpan = document.createElement("span");
+    articleSpan.innerHTML = `${htmlSpan}`;
+    articleSpan.classList.add("byline");
+    articleBody.appendChild(articleSpan);
+
+    const articleP = document.createElement("p");
+    articleP.innerHTML = `${htmlP}`;
+    articleBody.appendChild(articleP);
+  } else {
+    const articlediv = document.createElement("div");
+    articlediv.innerHTML = `${htmlcontent}`;
+    articlediv.classList.add("freestyle");
+    articleBody.appendChild(articlediv);
   }
+}
 
-  for (let i = 0; i < sectionArray.length; i++) {
-    createSection(sectionArray[i].title, sectionArray[i].image, sectionArray[i].htmlSpan, sectionArray[i].htmlP, sectionArray[i].htmlcontent);
-  }
+for (let i = 0; i < sectionArray.length; i++) {
+  createSection(sectionArray[i].title, sectionArray[i].image, sectionArray[i].htmlSpan, sectionArray[i].htmlP, sectionArray[i].htmlcontent);
+}
