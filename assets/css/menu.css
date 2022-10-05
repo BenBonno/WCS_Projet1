@@ -1,14 +1,16 @@
 .footer-menu {
     z-index: 1;
+    background-image: url(/assets/img/grass.png);
     position: fixed;
     bottom: 0;
-    background-image: url(/assets/img/grass.png);
     height: 10vh;
     width: 100vw;
 }
+
 .menu {
     left : 32px; /* Gislain dans la place */
     bottom:90px; /* Gislain dans la place */
+
     position: fixed;
     display: flex;
     align-items: center;

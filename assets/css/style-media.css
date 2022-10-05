@@ -16,7 +16,9 @@
         font-size: .8em;
         display:inline;
     }
-
+    .footer-menu {
+        background-image: none;
+    }
     .content {
         max-width: 85ch;
     }
