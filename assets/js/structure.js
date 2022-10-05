@@ -32,7 +32,7 @@ const sectionArray = [
   },
   {
     title: "Carrousel",
-    image: "",
+    image: "/assets/img/bgPorco.jpg",
     htmlSpan: "",
     htmlP: "",
     htmlcontent: "<div id='carrousel'></div>"
