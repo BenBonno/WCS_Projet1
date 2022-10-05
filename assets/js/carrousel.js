@@ -2,8 +2,8 @@ document.body.onload = function () {
     nbr = 5;
     p = 0;
     const containerCarrousel = document.getElementById("containerCarrousel");
-    const leftChevron = document.getElementById("leftChevron");
-    const rightChevron = document.getElementById("rightChevron");
+    // const leftChevron = document.getElementById("leftChevron");
+    // const rightChevron = document.getElementById("rightChevron");
     containerCarrousel.style.width = (800 * nbr) + "px";
     for (i = 1; i <= nbr; i++) {
         div = document.createElement("div");

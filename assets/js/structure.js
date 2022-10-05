@@ -35,7 +35,7 @@ const sectionArray = [
     image: "/assets/img/bgPorco.jpg",
     htmlSpan: "",
     htmlP: "",
-    htmlcontent: "<div id='carrousel'></div>"
+    htmlcontent: "<div id='containerCarrousel'></div>"
   }
 ];
 
