@@ -21,7 +21,7 @@ const sectionArray = [
     image: "/assets/img/bgPorco.jpg",
     htmlSpan: "",
     htmlP: "",
-    htmlcontent: "<div>PARATITION</div>"
+    htmlcontent: "<div class ='modal-container'><div class='overlay modal-trigger'></div><div class='modal' id='modalId' role='dialog' aria-labelledby='modalTitle' aria-describedby='dialogDesc'><button aria-label='close modal'class='close-modal modal-trigger'>X</button><h1 id='modalTitle'>Partition</h1></div></div><div class ='disco'></div>"
   },
   {
     title: "Rewards",
