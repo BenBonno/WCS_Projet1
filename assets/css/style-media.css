@@ -22,4 +22,7 @@
     .content {
         max-width: 85ch;
     }
+    .wrapper-menu img {
+        display: none;
+    }    
 }
