@@ -1,19 +1,18 @@
 const header = document.querySelector(".header");
-const menuwrapper = document.querySelector(".body");
 const main = document.querySelector(".main");
 
 const sectionArray = [
   {
     title: "News",
     image: "/assets/img/bgLaputa.jpg",
-    htmlSpan: "<p>Test</p>",
-    htmlP: "Paragraphe",
-    htmlcontent: "<h2>If I make fun of you it's because I like you someone to provide for you documentary filmmaker everything destructive that I do. But I only smoke when drinking Think about it! heyyy I despise you should message me, my last partner told me really only soft drugs friendzone looking for a third if you dress up like a pin-up doll for me. Full-contact Ayn Rand Libertarian full-contact full-contact wildly attractive doesn't hurt.If I make fun of you it's because I like you someone to provide for you documentary filmmaker everything destructive that I do. But I only smoke when drinking Think about it! heyyy I despise you should message me, my last partner told me really only soft drugs friendzone looking for a third if you dress up like a pin-up doll for me. Full-contact Ayn Rand Libertarian full-contact full-contact wildly attractive doesn't hurt.If I make fun of you it's because I like you someone to provide for you documentary filmmaker everything destructive that I do. But I only smoke when drinking Think about it! heyyy I despise you should message me, my last partner told me really only soft drugs friendzone looking for a third if you dress up like a pin-up doll for me. Full-contact Ayn Rand Libertarian full-contact full-contact wildly attractive doesn't hurt.If I make fun of you it's because I like you someone to provide for you documentary filmmaker everything destructive that I do. But I only smoke when drinking Think about it! heyyy I despise you should message me, my last partner told me really only soft drugs friendzone looking for a third if you dress up like a pin-up doll for me. Full-contact Ayn Rand Libertarian full-contact full-contact wildly attractive doesn't hurt.If I make fun of you it's because I like you someone to provide for you documentary filmmaker everything destructive that I do. But I only smoke when drinking Think about it! heyyy I despise you should message me, my last partner told me really only soft drugs friendzone looking for a third if you dress up like a pin-up doll for me. Full-contact Ayn Rand Libertarian full-contact full-contact wildly attractive doesn't hurt.</h2>"
+    htmlSpan: "",
+    htmlP: "",
+    htmlcontent: "<div class='newsbox'></div>"
   },
   {
     title: "Biographie",
     image: "/assets/img/bgTotoro.jpeg",
-    htmlSpan: "<h2>If I make fun of you it's because I like you someone to provide for you documentary filmmaker everything destructive that I do. <img src='/assets/img/Joe_Hisaishi_2011.png' width='170vw' alt='Joe Coker'/>But I only smoke when drinking Think about it! heyyy I despise you should message me, my last partner told me really only soft drugs friendzone looking for a third if you dress up like a pin-up doll for me. Full-contact Ayn Rand Libertarian full-contact full-contact wildly attractive doesn't hurt.If I make fun of you it's because I like you someone to provide for you documentary filmmaker everything destructive that I do. But I only smoke when drinking Think about it! heyyy I despise you should message me, my last partner told me really only soft drugs friendzone looking for a third if you dress up like a pin-up doll for me. Full-contact Ayn Rand Libertarian full-contact full-contact wildly attractive doesn't hurt.If I make fun of you it's because I like you someone to provide for you documentary filmmaker everything destructive that I do. But I only smoke when drinking Think about it! heyyy I despise you should message me, my last partner told me really only soft drugs friendzone looking for a third if you dress up like a pin-up doll for me. Full-contact Ayn Rand Libertarian full-contact full-contact wildly attractive doesn't hurt.If I make fun of you it's because I like you someone to provide for you documentary filmmaker everything destructive that I do. But I only smoke when drinking Think about it! heyyy I despise you should message me, my last partner told me really only soft drugs friendzone looking for a third if you dress up like a pin-up doll for me. Full-contact Ayn Rand Libertarian full-contact full-contact wildly attractive doesn't hurt.If I make fun of you it's because I like you someone to provide for you documentary filmmaker everything destructive that I do. But I only smoke when drinking Think about it! heyyy I despise you should message me, my last partner told me really only soft drugs friendzone looking for a third if you dress up like a pin-up doll for me. Full-contact Ayn Rand Libertarian full-contact full-contact wildly attractive doesn't hurt.</h2>",
+    htmlSpan: "<img src='/assets/img/Joe_Hisaishi_2011.png' width='170vw' alt='Joe Coker'/>",
     htmlP: "",
     htmlcontent: "<h2>Div test content</h2>"
   },
@@ -36,7 +35,7 @@ const sectionArray = [
     image: "/assets/img/bgPorco.jpg",
     htmlSpan: "",
     htmlP: "",
-    htmlcontent: "<div id='carrousel'></div>"
+    htmlcontent: '<div id="carrousel"> <div id="containerCarrousel"></div> <img src="assets/img/leftChevron.png" alt="leftButtonCarrousel" class="button" id="leftChevron"/> <img src="assets/img/rightChevron.png" alt="rightButtonCarrousel" class="button" id="rightChevron"/></div>',
   }
 ];
 
@@ -77,38 +76,10 @@ const headerNav = document.createElement("nav");
 headerNav.classList.add("header-nav");
 divParent.appendChild(headerNav);
 
-const navUl = document.createElement("ul");
-navUl.classList.add("nav-ul");
-headerNav.appendChild(navUl);
-
-for (let i = 0; i < sectionArray.length; i++) {
-  const navLi = document.createElement("li");
-  navLi.classList.add("nav-li");
-  navUl.appendChild(navLi);
-
-  const navA = document.createElement("a");
-  navA.innerHTML = `${sectionArray[i].title}`;
-  navA.href = `#${sectionArray[i].title}`;
-  navA.classList.add("nav-a");
-  navLi.appendChild(navA);
-}
 const divAccueil = document.createElement("div");
 divAccueil.classList.add("accueil");
 header.appendChild(divAccueil);
 ///// Fin HEADER /////
-
-const MenuBgWrapper = document.createElement("div");
-MenuBgWrapper.classList.add("wrapper-menu");
-menuwrapper.appendChild(MenuBgWrapper);
-
-const totoImg = document.createElement("img");
-totoImg.src = `/assets/img/totorosmall.gif`;
-MenuBgWrapper.appendChild(totoImg);
-
-const divMenuWrapper = document.createElement("div");
-divMenuWrapper.classList.add("menu");
-MenuBgWrapper.appendChild(divMenuWrapper);
-
 
 function createSection(title, imageUrl, htmlSpan, htmlP, htmlcontent) {
   const section = document.createElement("section");
@@ -154,3 +125,7 @@ function createSection(title, imageUrl, htmlSpan, htmlP, htmlcontent) {
 for (let i = 0; i < sectionArray.length; i++) {
   createSection(sectionArray[i].title, sectionArray[i].image, sectionArray[i].htmlSpan, sectionArray[i].htmlP, sectionArray[i].htmlcontent);
 }
+
+
+
+// GHISLAIN LE BOSS !!!!!! bisous !//

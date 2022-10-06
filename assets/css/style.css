@@ -26,9 +26,6 @@ body {
   margin: 0;
 }
 
-
-
-
 .page-title {
   text-align: center;
 }
@@ -49,33 +46,13 @@ body {
   height: auto;
 }
 
-
 .header-nav {
   display: block;
-}
-.nav-ul{
-  /* list-style: none; */
-  margin-right: 0.8em;
-}
-.nav-li{
-  /* list-style: none; */
-  padding:10px 1vh;
-  margin: 0 0.2em 0 0.2em;
-  font-size: .8em;
-  display:inline;
-}
-
-
-.nav-a {
-  font-weight: bold;
-  color: hsl(75, 4%, 79%);
-  text-decoration: none;
 }
 
 .video-mobilefirst {
   background-size: cover;
-  min-width: 100vw;
-  min-height: 100vh;
+  max-width: 100vw;
 }
 
 .video-desktop {
@@ -101,12 +78,6 @@ body {
 .header-title>img {
   height: 30%;
   width: 10rem
-}
-.header-nav{
-  display: none;
-}
-.menu {
-  display: block;
 }
 
 .acceuil{
@@ -202,6 +173,44 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.newsbox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.card-news {
+border-radius: 10px;
+  width: 200px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-img-news {
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("http://placekitten.com/200/300");
+  height: 200px;
+  width: 100%;
+}
+.card-body-news {
+  padding: 10px 20px;
+}
+.card-body-news h2 {
+  margin: 10px 0px;
+}
+.card-button {
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  background-color: lightblue;
+  width: 100%;
 }
 
 .rewards {  
