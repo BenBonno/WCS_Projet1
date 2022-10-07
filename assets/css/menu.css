@@ -170,5 +170,9 @@
       width: 12px;
     }
   }
+/*---------rajout de margin right pour le header-nav----*/
+.header-nav {
+  margin-right: 2.2rem
+};
 
   
