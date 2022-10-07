@@ -29,6 +29,7 @@ menuDiv.appendChild(menuSpan2);
 /// Navigation
 const navUl = document.createElement("ul");
 navUl.classList.add("nav-ul");
+navUl.setAttribute("id","nav-ul-id")
 menuPort.appendChild(navUl);
 
 for (let i = 0; i < sectionArray.length; i++) {
@@ -42,3 +43,5 @@ for (let i = 0; i < sectionArray.length; i++) {
   navA.classList.add("nav-a");
   navLi.appendChild(navA);
 }
+
+
