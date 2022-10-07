@@ -20,6 +20,7 @@
 
 .header-nav img{
     position: fixed;
+    width: 150px;
     left: -23px;
     bottom: 38px;
 }
@@ -91,8 +92,8 @@
 
   .menu-icon {
     position: fixed;
-    bottom: 85px;
-    left: 50px;
+    bottom: 65px;
+    left: 28px;
     width: 50px;
     height: 50px;
     cursor: pointer;
