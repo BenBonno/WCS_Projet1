@@ -15,7 +15,7 @@ const newsToCreate = [
     link: "https://www.barbican.org.uk/whats-on/2022/event/royal-shakespeare-company-my-neighbour-totoro"
   },
   {
-    name: "Une Performance hors norme",
+    name: "Performance hors norme",
     paragraphe: "Découvrez la préstation de Mr Hisaishi au Far East Film Festival (Italie) <br><br> 12 Décembre 2021",
     picture: "/assets/img/news3.jpg",
     link: "https://www.japantimes.co.jp/culture/2015/03/18/films/asian-cinema-caught-festival-feeding-frenzy/"
