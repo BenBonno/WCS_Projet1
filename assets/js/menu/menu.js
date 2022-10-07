@@ -5,7 +5,7 @@
 // headerNav.appendChild(MenuBgWrapper);
 
 const totoImg = document.createElement("img");
-totoImg.src = `/assets/img/totorosmall.gif`;
+totoImg.src = `assets/img/totorosmall.gif`;
 headerNav.appendChild(totoImg);
 
 const menuPort = document.createElement("div");
