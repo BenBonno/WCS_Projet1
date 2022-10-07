@@ -26,9 +26,6 @@ body {
   margin: 0;
 }
 
-
-
-
 .page-title {
   text-align: center;
 }
@@ -49,33 +46,13 @@ body {
   height: auto;
 }
 
-
 .header-nav {
   display: block;
-}
-.nav-ul{
-  /* list-style: none; */
-  margin-right: 0.8em;
-}
-.nav-li{
-  /* list-style: none; */
-  padding:10px 1vh;
-  margin: 0 0.2em 0 0.2em;
-  font-size: .8em;
-  display:inline;
-}
-
-
-.nav-a {
-  font-weight: bold;
-  color: hsl(75, 4%, 79%);
-  text-decoration: none;
 }
 
 .video-mobilefirst {
   background-size: cover;
-  min-width: 100vw;
-  min-height: 100vh;
+  max-width: 100vw;
 }
 
 .video-desktop {
@@ -101,12 +78,6 @@ body {
 .header-title>img {
   height: 30%;
   width: 10rem
-}
-.header-nav{
-  display: none;
-}
-.menu {
-  display: block;
 }
 
 .acceuil{
@@ -204,6 +175,196 @@ body {
   }
 }
 
+.newsbox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.card-news {
+border-radius: 10px;
+  width: 200px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-img-news {
+  border-radius: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url("http://placekitten.com/200/300");
+  height: 200px;
+  width: 100%;
+}
+.card-body-news {
+  padding: 10px 20px;
+}
+.card-body-news h2 {
+  margin: 10px 0px;
+}
+.card-button {
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  background-color: lightblue;
+  width: 100%;
+}
+/*Disco CSS section*/
+.disco {
+  min-width: 80%; 
+  color : black; 
+  display : grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  font-weight: bold;
+}
+
+.song {    
+  background-color: white;
+  border-radius: 10px 10px 10px 10px;
+  display : grid;  
+  grid-gap: 1px;
+  grid-template-columns: 8fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  background-repeat:repeat;
+}
+.ghibli {
+  background-size: cover;
+  background-position: center;
+  background-repeat:repeat;
+}
+
+
+.song-title , .song-date, .song-part{
+  padding: 0px;
+  margin: 0px;
+}
+.song-title {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.song-date {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.song-part {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display :flex ;
+  align-items: center;
+  vertical-align: center;
+}
+.song-part img {
+  height : 50%; 
+  width : 50%;
+  cursor: pointer;
+}
+
+/*Fenetre Modal---------------------------------------*/
+/*.modal-btn {
+  padding: 10px 14px;
+  font-size: 18px;
+  margin: 100px auto;
+  display: block;
+  min-width: 150px;
+  cursor: pointer;
+}*/
+.modal-btn{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+}
+.modal-container {
+  /* display: none; */
+  visibility: hidden;
+  position: fixed;
+  /*top: 0;*/
+  width: 100%;
+  height: 100%;
+  transition: visibility 0.4s;
+}
+.modal-container.active {
+  /* display: block; */
+  visibility: visible;
+}
+
+.overlay {
+  box-sizing: content-box;
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
+.modal-container.active .overlay {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.modal {
+  opacity: 0;
+  width: 95%;
+  max-width: 800px;
+  min-width: 320px;
+  padding: 30px;
+  margin-top: 5%;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 40%;
+  left: 45%;  
+  transform: translate(-50%, calc(-50% - 50px));
+  transition: opacity 0.4s ease-out,
+  transform 0.4s ease-out;
+}
+
+.modal-container.active .modal {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s 0.2s ease-out,
+  transform 0.4s 0.2s ease-out;
+}
+
+.close-modal {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: #ff365e;
+  color: #fff;
+}
+.modal h1 {
+  margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: black;
+}
+.modal p {
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+/*Fin Fenetre Modal---------------------------------------------*/
+
+/*Fin Disco CSS section*/
 .rewards {  
   
   font-size: 1rem;

@@ -1,5 +1,4 @@
 const header = document.querySelector(".header");
-const menuwrapper = document.querySelector(".body");
 const main = document.querySelector(".main");
 
 const sectionArray = [
@@ -22,7 +21,7 @@ const sectionArray = [
     image: "/assets/img/bgPorco.jpg",
     htmlSpan: "",
     htmlP: "",
-    htmlcontent: "<div>PARATITION</div>"
+    htmlcontent: "<div class ='modal-container'><div class='overlay modal-trigger'></div><div class='modal' id='modalId' role='dialog' aria-labelledby='modalTitle' aria-describedby='dialogDesc'><button aria-label='close modal'class='close-modal modal-trigger'>X</button><h1 id='modalTitle'>Partition</h1></div></div><div class ='disco'></div>"
   },
   {
     title: "Rewards",
@@ -36,7 +35,7 @@ const sectionArray = [
     image: "/assets/img/bgPorco.jpg",
     htmlSpan: "",
     htmlP: "",
-    htmlcontent: "<div id='carrousel'></div>"
+    htmlcontent: '<div id="carrousel"> <div id="containerCarrousel"></div> <img src="assets/img/leftChevron.png" alt="leftButtonCarrousel" class="button" id="leftChevron"/> <img src="assets/img/rightChevron.png" alt="rightButtonCarrousel" class="button" id="rightChevron"/></div>',
   }
 ];
 
@@ -77,29 +76,10 @@ const headerNav = document.createElement("nav");
 headerNav.classList.add("header-nav");
 divParent.appendChild(headerNav);
 
-const navUl = document.createElement("ul");
-navUl.classList.add("nav-ul");
-headerNav.appendChild(navUl);
-
-for (let i = 0; i < sectionArray.length; i++) {
-  const navLi = document.createElement("li");
-  navLi.classList.add("nav-li");
-  navUl.appendChild(navLi);
-
-  const navA = document.createElement("a");
-  navA.innerHTML = `${sectionArray[i].title}`;
-  navA.href = `#${sectionArray[i].title}`;
-  navA.classList.add("nav-a");
-  navLi.appendChild(navA);
-}
 const divAccueil = document.createElement("div");
 divAccueil.classList.add("accueil");
 header.appendChild(divAccueil);
 ///// Fin HEADER /////
-
-const divMenuWrapper = document.createElement("div");
-divMenuWrapper.classList.add("menu");
-menuwrapper.appendChild(divMenuWrapper);
 
 function createSection(title, imageUrl, htmlSpan, htmlP, htmlcontent) {
   const section = document.createElement("section");
@@ -145,3 +125,7 @@ function createSection(title, imageUrl, htmlSpan, htmlP, htmlcontent) {
 for (let i = 0; i < sectionArray.length; i++) {
   createSection(sectionArray[i].title, sectionArray[i].image, sectionArray[i].htmlSpan, sectionArray[i].htmlP, sectionArray[i].htmlcontent);
 }
+
+
+
+// GHISLAIN LE BOSS !!!!!! bisous !//
