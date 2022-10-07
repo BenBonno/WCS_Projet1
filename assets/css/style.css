@@ -366,36 +366,47 @@ border-radius: 10px;
 /*Fin Fenetre Modal---------------------------------------------*/
 
 /*Fin Disco CSS section*/
-.rewards {  
-  
-  font-size: 1rem;
-}
+
+/*Rewards CSS section*/
 table {
-  min-width:90%;
-}
-table,
-th,
-td {
-  color: black;
-  border: 1px solid;
-  margin-left: 40px;  
-  text-align: center;  
-}
-
-th {
-  background-color: rgba(199, 222, 202, 0.2);
-}
-tbody tr:nth-child(odd) {
-  background-color: rgba(255, 255, 255, 0.5);
+  border-collapse: collapse;
+  border-radius: 1em;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  color : black;
 }
 
-tbody tr:nth-child(even) {
-  background-color: rgba(199, 222, 202, 0.2);
+thead tr {
+  background-color: rgba(44, 135, 66, 0.5);
+  color: #ffffff;
+  text-align: left; 
 }
 
-.column1{
-  width:5%;
+th, td {
+    padding: 12px 15px;
+   
 }
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;  
+}
+
+tbody tr:nth-of-type(even) {
+  background-color:rgba(44, 135, 66, 0.3);  
+  color: white;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color:rgba(250, 250, 250, 0.8)
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+/*Fin Rewards CSS section*/
 
 /*---------------------------------------------------------------------------*/
 .newsbox {
