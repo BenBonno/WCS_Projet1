@@ -85,6 +85,13 @@ body {
   height: calc(100vh - 96px);
 }
 
+.float {
+  float: left;
+  padding-right: 3%;
+  width: 35%;
+}
+  
+
 .section {
   transform-origin: center top;
   transform: scaleY(calc(1 - var(--scale)));
