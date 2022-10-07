@@ -221,6 +221,7 @@ border-radius: 10px;
   grid-template-rows: auto;
   grid-gap: 10px;
   font-weight: bold;
+  text-shadow: #C3E48D 2px 2px 0px, #9C9C9C 4px 4px 0px;  
 }
 
 .song {    
