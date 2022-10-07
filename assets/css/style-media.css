@@ -62,6 +62,17 @@
     .content {
         max-width: 85ch;
     }
+    
+    .disco {
+      min-width: 80%; 
+      color : black; 
+      display : grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-gap: 10px;
+      font-weight: bold;
+    }
+    
     .footer-menu {
       background-image: none;
     }
