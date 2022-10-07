@@ -21,7 +21,7 @@
 .header-nav img{
     position: fixed;
     left: -23px;
-    bottom: 15px;
+    bottom: 38px;
 }
 
 .nav-a {
@@ -91,7 +91,7 @@
 
   .menu-icon {
     position: fixed;
-    bottom: 64px;
+    bottom: 85px;
     left: 50px;
     width: 50px;
     height: 50px;
