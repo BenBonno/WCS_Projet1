@@ -5,19 +5,19 @@ const newsToCreate = [
   {
     name: "Hisaishi en streaming",
     paragraphe: "Le compositeur et ses créations disponibles en streaming. <br><br> 3 Octobre 2022",
-    picture: "/assets/img/news1.jpg",
+    picture: "assets/img/news1.jpg",
     link : "https://www.japantimes.co.jp/culture/2020/05/28/music/ghibli-joe-hisaishi-streaming/"
   },
   {
     name: "My Neighbour Totoro",
     paragraphe: "La représentation de Totoro à voir au 'Barbican Theatre'. <br><br> 20 Septembre 2022",
-    picture: "/assets/img/news2.jpg",
+    picture: "assets/img/news2.jpg",
     link: "https://www.barbican.org.uk/whats-on/2022/event/royal-shakespeare-company-my-neighbour-totoro"
   },
   {
     name: "Performance hors norme",
     paragraphe: "Découvrez la préstation de Mr Hisaishi au Far East Film Festival (Italie) <br><br> 12 Décembre 2021",
-    picture: "/assets/img/news3.jpg",
+    picture: "assets/img/news3.jpg",
     link: "https://www.japantimes.co.jp/culture/2015/03/18/films/asian-cinema-caught-festival-feeding-frenzy/"
   }
 ];
