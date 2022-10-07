@@ -1,7 +1,7 @@
 @media screen and (max-width: 720px) {
 .footer-menu {
   z-index: 99999;
-    background-image: url(/assets/img/grass.png);
+    background-image: url(assets/img/grass.png);
     position: fixed;
     bottom: 0;
     height: 9vh;
