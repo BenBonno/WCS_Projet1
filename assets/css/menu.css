@@ -1,0 +1,174 @@
+@media screen and (max-width: 720px) {
+.footer-menu {
+  z-index: 99999;
+    background-image: url(/assets/img/grass.png);
+    position: fixed;
+    bottom: 0;
+    height: 9vh;
+    width: 100vw;
+}
+
+.header-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.header-nav img{
+    position: fixed;
+    left: -23px;
+    bottom: 15px;
+}
+
+.nav-a {
+  font-weight: bold;
+  color: hsl(75, 4%, 79%);
+  text-decoration: none;
+}
+
+.nav-ul{
+  /* list-style: none; */
+  margin-right: 0.8em;
+  text-align-last: start;
+  padding-top: 15%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 100%;
+  height: 100%;
+  width: 70%;
+  top: 40px;
+  transition: all .5s ease-in-out;
+}
+.nav-ul li{
+  font-size: 2rem;
+  display:block;
+  padding: 30px 0;
+  text-align: center;
+  list-style-type: none;
+  transition: all .2s ease;
+}
+.nav-ul li:hover{
+  letter-spacing: 2px;
+  opacity: .6;
+}
+.nav-li{
+  /* list-style: none; */
+  padding:10px 1vh;
+  margin: 0 0.2em 0 0.2em;
+  font-size: .8em;
+  display:inline;
+}
+
+.wrapper-menu {
+  background-color: chartreuse;
+  position: fixed;
+  left : -26px; /* Gislain dans la place */
+  bottom: -20px; /* Gislain dans la place */
+}
+
+.menu {
+    left : 82px; /* Gislain dans la place */
+    bottom: 107px; /* Gislain dans la place */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    height: 5vh;
+  }
+
+  .menu .menu-icon {
+    transform: scale(1.5);
+  }
+  
+  :root {
+    --bar-bg: #212529;
+  }
+
+  .menu-icon {
+    position: fixed;
+    bottom: 64px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  .menu-icon .menu-icon__cheeckbox {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    -webkit-touch-callout: none;
+    position: absolute;
+    opacity: 0;
+  }
+  .menu-icon div {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 22px;
+    height: 12px;
+  }
+  .menu-icon span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--bar-bg, #000);
+    border-radius: 1px;
+    transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+  }
+  .menu-icon span:first-of-type {
+    top: 0;
+  }
+  .menu-icon span:last-of-type {
+    bottom: 0;
+  }
+
+  .menu-icon__cheeckbox:checked ~.nav-ul{
+    left: 55%;
+  }
+
+  /* ul:has(a.active) {
+    left: 100%;
+  } */
+  
+  .menu-icon.active span:first-of-type,
+  .menu-icon .menu-icon__cheeckbox:checked + div span:first-of-type {
+    transform: rotate(45deg);
+    top: 5px;
+  }
+  .menu-icon.active span:last-of-type,
+  .menu-icon .menu-icon__cheeckbox:checked + div span:last-of-type {
+    transform: rotate(-45deg);
+    bottom: 5px;
+  }
+  .menu-icon.active:hover span:first-of-type, .menu-icon.active:hover span:last-of-type, .menu-icon:hover .menu-icon__cheeckbox:checked + div span:first-of-type, .menu-icon:hover .menu-icon__cheeckbox:checked + div span:last-of-type {
+    width: 22px;
+  }
+}
+@media (max-width: 520px) {
+  .nav-ul li {
+    font-size: 1.2rem;
+  }
+
+}
+  @media (min-width: 1024px) {
+    .menu-icon:hover span:first-of-type {
+      width: 26px;
+    }
+    .menu-icon:hover span:last-of-type {
+      width: 12px;
+    }
+  }
+
+  
