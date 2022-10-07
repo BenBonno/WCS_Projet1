@@ -482,7 +482,7 @@ border-radius: 10px;
 }
 
 .footer{
- min-height:4rem; 
+ height:4rem; 
 }
 @media screen and (min-width : 768px) {
   
